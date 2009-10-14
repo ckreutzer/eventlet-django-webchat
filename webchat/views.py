@@ -60,5 +60,3 @@ def _create_message(from_, body):
 def _json_response(value, **kwargs):
     kwargs.setdefault('content_type', 'text/javascript; charset=UTF-8')
     return HttpResponse(simplejson.dumps(value), **kwargs)
-
-	
