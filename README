@@ -3,7 +3,7 @@ python based tornado web framework and converted to use django and eventlet.
 
 based upon the gevent port of that tornado example by Denis Bilenko (here:
 http://bitbucket.org/denis/gevent/src/tip/examples/webchat/ and here:
-http://prg10001.blogspot.com/2009/09/simpler-long-polling-with-django-and.htm). 
+http://prg10001.blogspot.com/2009/09/simpler-long-polling-with-django-and.html). 
 The original tornado version can be found here: 
 http://github.com/facebook/tornado/tree/master/demos/chat/
 
