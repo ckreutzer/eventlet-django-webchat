@@ -20,10 +20,8 @@ call_command('syncdb')
 application = WSGIHandler()
 
 if __name__ == '__main__':
-    from eventlet import api, wsgi, util
-    
-    # wrapping threading with coros to prevent problems with django's db access
-    util.wrap_threading_local_with_coro_local()
+    import eventlet
+    from eventlet import wsgi, patcher
         
     print 'Serving on 8080...'
-    wsgi.server(api.tcp_listener(('', 8080)), application)
+    wsgi.server(eventlet.listen(('', 8080)), application)
